@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>Kontaktní formulář</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Vstupní dotazník</value>
+  </data>
+  <data name="FormHeading" xml:space="preserve">
+    <value>Zadejte své kontaktní údaje</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>Data byla úspěšně uložena.</value>
+  </data>
+  <data name="JsonGenerated" xml:space="preserve">
+    <value>Byl vytvořen exportní soubor:</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Jméno a příjmení</value>
+  </data>
+  <data name="BirthNumber" xml:space="preserve">
+    <value>Rodné číslo</value>
+  </data>
+  <data name="NoBirthNumber" xml:space="preserve">
+    <value>Nemám rodné číslo</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>Datum narození</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Pohlaví</value>
+  </data>
+  <data name="SelectOption" xml:space="preserve">
+    <value>Vyberte…</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Nationality" xml:space="preserve">
+    <value>Státní příslušnost</value>
+  </data>
+  <data name="GdprConsent" xml:space="preserve">
+    <value>Souhlasím se zpracováním osobních údajů</value>
+  </data>
+  <data name="GdprLink" xml:space="preserve">
+    <value>(Zobrazit GDPR)</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Odeslat</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Muž</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Žena</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Jiné</value>
+  </data>
+  <data name="CzechRepublic" xml:space="preserve">
+    <value>Česká republika</value>
+  </data>
+  <data name="Slovakia" xml:space="preserve">
+    <value>Slovensko</value>
+  </data>
+  <data name="Poland" xml:space="preserve">
+    <value>Polsko</value>
+  </data>
+  <data name="Germany" xml:space="preserve">
+    <value>Německo</value>
+  </data>
+  <data name="Austria" xml:space="preserve">
+    <value>Rakousko</value>
+  </data>
+</root>

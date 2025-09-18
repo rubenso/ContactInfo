@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NameRequired" xml:space="preserve">
+    <value>Jméno a příjmení je povinné.</value>
+  </data>
+  <data name="BirthNumberRequired" xml:space="preserve">
+    <value>Rodné číslo je povinné.</value>
+  </data>
+  <data name="BirthNumberInvalid" xml:space="preserve">
+    <value>Rodné číslo není ve správném formátu.</value>
+  </data>
+  <data name="BirthDateRequired" xml:space="preserve">
+    <value>Datum narození je povinné.</value>
+  </data>
+  <data name="GenderRequired" xml:space="preserve">
+    <value>Pohlaví je povinné.</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>E-mail je povinný.</value>
+  </data>
+  <data name="EmailInvalid" xml:space="preserve">
+    <value>E-mail nemá platný formát.</value>
+  </data>
+  <data name="NationalityRequired" xml:space="preserve">
+    <value>Státní příslušnost je povinná.</value>
+  </data>
+  <data name="GdprRequired" xml:space="preserve">
+    <value>Pro pokračování je nutné udělit souhlas se zpracováním osobních údajů.</value>
+  </data>
+</root>

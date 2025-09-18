@@ -1,0 +1,91 @@
+@page
+@model ContactInfo.Web.Pages.IndexModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<section class="form-section">
+    <h2>@Localizer["FormHeading"]</h2>
+
+    @if (Model.Saved)
+    {
+        <div class="alert success">
+            <p>@Localizer["SaveSuccess"]</p>
+            @if (!string.IsNullOrEmpty(Model.ExportFileName))
+            {
+                <p>@Localizer["JsonGenerated"] <strong>@Model.ExportFileName</strong></p>
+            }
+        </div>
+    }
+
+    <form method="post" novalidate data-birth-date-target="@Html.IdFor(m => m.Input.BirthDate)">
+        <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+
+        <div class="form-group">
+            <label asp-for="Input.FullName">@Localizer["FullName"]</label>
+            <input asp-for="Input.FullName" />
+            <span asp-validation-for="Input.FullName" class="validation"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Input.BirthNumber">@Localizer["BirthNumber"]</label>
+            <input asp-for="Input.BirthNumber" data-rc-input="true" />
+            <span asp-validation-for="Input.BirthNumber" class="validation"></span>
+        </div>
+
+        <div class="form-check">
+            <input asp-for="Input.NoBirthNumber" class="form-check-input" data-no-rc-toggle="true" />
+            <label asp-for="Input.NoBirthNumber" class="form-check-label">@Localizer["NoBirthNumber"]</label>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Input.BirthDate">@Localizer["BirthDate"]</label>
+            <input asp-for="Input.BirthDate" />
+            <span asp-validation-for="Input.BirthDate" class="validation"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Input.Gender">@Localizer["Gender"]</label>
+            <select asp-for="Input.Gender">
+                <option value="">@Localizer["SelectOption"]</option>
+                @foreach (var gender in Model.GenderOptions)
+                {
+                    <option value="@gender">@Localizer[gender]</option>
+                }
+            </select>
+            <span asp-validation-for="Input.Gender" class="validation"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Input.Email">@Localizer["Email"]</label>
+            <input asp-for="Input.Email" />
+            <span asp-validation-for="Input.Email" class="validation"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Input.Nationality">@Localizer["Nationality"]</label>
+            <select asp-for="Input.Nationality">
+                <option value="">@Localizer["SelectOption"]</option>
+                @foreach (var nationality in Model.NationalityOptions)
+                {
+                    <option value="@nationality">@Localizer[nationality]</option>
+                }
+            </select>
+            <span asp-validation-for="Input.Nationality" class="validation"></span>
+        </div>
+
+        <div class="form-check">
+            <input asp-for="Input.GdprConsent" class="form-check-input" />
+            <label asp-for="Input.GdprConsent" class="form-check-label">
+                @Localizer["GdprConsent"]
+                <a href="~/gdpr/privacy-policy.pdf" target="_blank" rel="noopener noreferrer">@Localizer["GdprLink"]</a>
+            </label>
+            <span asp-validation-for="Input.GdprConsent" class="validation"></span>
+        </div>
+
+        <button type="submit" class="primary-button">@Localizer["Submit"]</button>
+    </form>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

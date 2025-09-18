@@ -1,0 +1,25 @@
+CREATE DATABASE ContactInfo;
+GO
+
+USE ContactInfo;
+GO
+
+IF OBJECT_ID('dbo.Contacts', 'U') IS NOT NULL
+BEGIN
+    DROP TABLE dbo.Contacts;
+END
+GO
+
+CREATE TABLE dbo.Contacts
+(
+    Id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    FullName NVARCHAR(200) NOT NULL,
+    BirthNumber NVARCHAR(20) NULL,
+    BirthDate DATE NOT NULL,
+    Gender NVARCHAR(20) NOT NULL,
+    Email NVARCHAR(254) NOT NULL,
+    Nationality NVARCHAR(100) NOT NULL,
+    GdprConsent BIT NOT NULL,
+    CreatedAtUtc DATETIME2(0) NOT NULL DEFAULT SYSUTCDATETIME()
+);
+GO

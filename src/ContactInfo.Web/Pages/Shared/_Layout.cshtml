@@ -1,0 +1,28 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+<!DOCTYPE html>
+<html lang="@System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Localizer["Title"] - Contact Info</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>@Localizer["Header"]</h1>
+            <nav class="language-switcher">
+                <a href="?culture=cs&ui-culture=cs">CZ</a>
+                <span>|</span>
+                <a href="?culture=en&ui-culture=en">EN</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+    <script src="~/js/contact-form.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
